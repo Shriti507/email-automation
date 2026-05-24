@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function NavbarLightWithShadow() {
@@ -38,12 +38,15 @@ export default function NavbarLightWithShadow() {
         >
           Get Extension
         </button>
-        <button
-          type="button"
-          className="bg-white text-gray-600 border border-gray-300 text-sm hover:bg-gray-50 active:scale-95 transition-all px-6 h-11 rounded-full"
-        >
-          Sign up
-        </button>
+        <Link href="/login">
+          <button
+            type="button"
+            className="bg-white text-gray-600 border border-gray-300 text-sm hover:bg-gray-50 active:scale-95 transition-all px-6 h-11 rounded-full"
+          >
+            Sign up
+          </button>
+        </Link>
+        
       </div>
 
       {/* Mobile Hamburger Menu Button */}
@@ -87,12 +90,14 @@ export default function NavbarLightWithShadow() {
           </li>
         </ul>
         <div className="flex flex-col gap-4 mt-6">
+        <Link href="/login">
           <button
             type="button"
-            className="bg-white text-gray-600 border border-gray-300 mt-6 text-sm hover:bg-gray-50 active:scale-95 transition-all w-40 h-11 rounded-full"
+            className="bg-white text-gray-600 border border-gray-300 text-sm hover:bg-gray-50 active:scale-95 transition-all px-6 h-11 rounded-full"
           >
             Sign up
           </button>
+        </Link>
 
           <button
             type="button"
