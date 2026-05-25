@@ -2,6 +2,8 @@
 import Link from "next/link";
 import React, { useState } from "react";
 
+
+
 export default function NavbarLightWithShadow() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -18,15 +20,15 @@ export default function NavbarLightWithShadow() {
           </a>
         </li>
         <li>
-          <a className="hover:text-gray-500/80 transition" href="#">
-            Services
-          </a>
+          <Link href="/about">
+            About
+          </Link>
         </li>
        
         <li>
-          <a className="hover:text-gray-500/80 transition" href="#">
+          <Link href="/price">
             Pricing
-          </a>
+          </Link>
         </li>
       </ul>
 
@@ -78,9 +80,9 @@ export default function NavbarLightWithShadow() {
             </a>
           </li>
           <li>
-            <a href="#" className="text-sm">
-              Services
-            </a>
+            <Link href="/about" className="text-sm">
+              About
+            </Link>
           </li>
         
           <li>
@@ -93,7 +95,7 @@ export default function NavbarLightWithShadow() {
         <Link href="/login">
           <button
             type="button"
-            className="bg-white text-gray-600 border border-gray-300 text-sm hover:bg-gray-50 active:scale-95 transition-all px-6 h-11 rounded-full"
+            className="bg-white text-gray-600 border border-gray-300 text-sm hover:bg-gray-50 active:scale-95 transition-all px-6 h-11 rounded-full w-40"
           >
             Sign up
           </button>
