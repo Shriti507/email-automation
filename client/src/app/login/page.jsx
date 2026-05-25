@@ -21,9 +21,9 @@ export default function Page() {
     }
 
     return (
-            <div className="min-h-screen flex items-center justify-center">
-                <form onSubmit={handleSubmit} className="sm:w-[350px] w-full text-center border border-gray-300/60 rounded-2xl px-8 bg-white">
-                    
+            <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-violet-200 via-purple-50 to-indigo-100">
+
+              <form onSubmit={handleSubmit} className="sm:w-[350px] w-full text-center border border-gray-300/60 rounded-2xl px-8 bg-white max-h-200 overflow-y-auto pb-4">
                     <h2 className="text-2xl font-semibold mt-6 text-gray-800">Login</h2>
 
                     <p className="text-sm text-gray-600 mt-2">
